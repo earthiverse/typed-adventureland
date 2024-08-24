@@ -1,12 +1,22 @@
 import { TradeSlotType } from "./entity";
 import { MapKey, StandKey } from "./G";
 import { TradeItemInfo } from "./items";
+import { XOnlineCharacter, XServerInfos } from "./index";
 import { BetterUXWrapper } from "./types/GTypes/utils";
 
 export type ServersAndCharactersApiResponse = {
   type: "servers_and_characters";
-  servers: [];
-  characters: [];
+  servers: XServerInfos[];
+  characters: XOnlineCharacter[];
+  tutorial: {
+    step: number;
+    task: boolean;
+    completed: [];
+    progress: number;
+  };
+  code_list: Record<string, [string, number]>;
+  mail: number;
+  rewards: [];
 };
 
 export type FriendsApiResponse = {
