@@ -4,7 +4,7 @@ import { TradeItemInfo } from "./items";
 import { XOnlineCharacter, XServerInfos } from "./index";
 import { BetterUXWrapper } from "./types/GTypes/utils";
 
-export type ServersAndCharactersApiResponse = {
+export type ServersAndCharactersApiResponse = [{
   type: "servers_and_characters";
   servers: XServerInfos[];
   characters: XOnlineCharacter[];
@@ -17,7 +17,7 @@ export type ServersAndCharactersApiResponse = {
   code_list: Record<string, [string, number]>;
   mail: number;
   rewards: [];
-};
+}];
 
 export type FriendsApiResponse = {
   type: "friends";
