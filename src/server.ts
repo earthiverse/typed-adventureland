@@ -33,4 +33,4 @@ export type IdentifierForRegion<SR extends ServerRegion> =
   SR extends "ASIA" ? ASIAServerIdentifier :
   never;
 
-export type ServerKey = `ASIA${ASIAServerIdentifier}` | `US${USServerIdentifier}` | `EU${EUServerIdentifier}`;
+export type ServerKey = `SR_ASIA${ASIAServerIdentifier}` | `SR_US${USServerIdentifier}` | `SR_EU${EUServerIdentifier}`;

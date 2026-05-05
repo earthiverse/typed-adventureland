@@ -68,14 +68,14 @@ export interface XOnlineCharacter {
   secret: string;
   cx?: CharacterEntityCXInfos;
   online: number;
-  home: ServerKey;
+  home: `${ServerRegion}${ServerIdentifier}`;
   type: ClassKey;
   id: string;
 }
 
 interface ServerInfo<SR extends ServerRegion, SI extends IdentifierForRegion<SR>> {
   address: string;
-  key: `SR_${SR}${SI}`;
+  key: ServerKey;
   name: SI;
   path: string;
   players: number;
