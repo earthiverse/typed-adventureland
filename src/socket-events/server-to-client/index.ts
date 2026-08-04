@@ -5,6 +5,7 @@ import {
   ServerToClient_chest_opened,
   ServerToClient_cm,
   ServerToClient_code_eval,
+  ServerToClient_correction,
   ServerToClient_death,
   ServerToClient_disappear,
   ServerToClient_disappearing_text,
@@ -52,6 +53,7 @@ export interface ServerToClientEvents {
   chest_opened: ServerToClient_chest_opened;
   cm: ServerToClient_cm;
   code_eval: ServerToClient_code_eval;
+  correction: ServerToClient_correction;
   death: ServerToClient_death;
   disappear: ServerToClient_disappear;
   disappearing_text: ServerToClient_disappearing_text;

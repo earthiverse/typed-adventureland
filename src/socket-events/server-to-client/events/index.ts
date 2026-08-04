@@ -4,6 +4,7 @@ export * from "./ServerToClient_chat_log";
 export * from "./ServerToClient_chest_opened";
 export * from "./ServerToClient_cm";
 export * from "./ServerToClient_code_eval";
+export * from "./ServerToClient_correction";
 export * from "./ServerToClient_death";
 export * from "./ServerToClient_disappear";
 export * from "./ServerToClient_disappearing_text";
