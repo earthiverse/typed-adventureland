@@ -5,7 +5,7 @@ import {
   CharacterEntitySlotsInfos,
 } from "../../../entities/character-entity";
 import { StatusInfo } from "../../../entities/status-info";
-import { ClassKey, MapKey, MonsterKey, NpcKey } from "../../../G";
+import { ClassKey, MapKey, MonsterKey, NpcKey, StandKey } from "../../../G";
 
 export type ServerToClient_entities_players = {
   id: string;
@@ -55,7 +55,7 @@ export type ServerToClient_entities_players = {
   skin: string;
   slots?: CharacterEntitySlotsInfos;
   speed: number;
-  stand?: boolean | "cstand" | "stand0";
+  stand?: boolean | StandKey;
   target?: string | null;
   tp?: boolean;
   xp?: number;

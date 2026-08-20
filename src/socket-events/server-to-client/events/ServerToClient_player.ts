@@ -7,7 +7,7 @@ import {
   CharacterEntitySlotsInfos,
 } from "../../../entities/character-entity";
 import { StatusInfo } from "../../../entities/status-info";
-import { ClassKey, EmotionKey, MapKey } from "../../../G";
+import { ClassKey, EmotionKey, MapKey, StandKey } from "../../../G";
 import { ItemInfo } from "../../../items";
 import { ServerToClient_eval } from "./ServerToClient_eval";
 import { ServerToClient_game_response } from "./ServerToClient_game_response";
@@ -47,7 +47,7 @@ export type ServerToClient_player = CharacterEntity & {
   going_x?: number;
   going_y?: number;
   moving?: boolean;
-  stand?: boolean | "cstand" | "stand0";
+  stand?: boolean | StandKey;
   skin: string;
   slots: CharacterEntitySlotsInfos;
   ctype: ClassKey;

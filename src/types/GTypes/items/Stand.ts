@@ -1,4 +1,5 @@
 export type StandKey =
+  | "cstand" // Computer / Supercomputer
   | "stand0" // Merchant Stand
   | "stand1"; // Merchant Stand [Sell+Buy]
 

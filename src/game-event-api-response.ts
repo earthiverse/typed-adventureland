@@ -47,7 +47,7 @@ export type MerchantsApiResponse = {
     level: number;
     afk: boolean | string;
     server: string;
-    stand: StandKey | "cstand" /** computer stand */;
+    stand: StandKey;
     y: number;
     x: number;
   }>;
